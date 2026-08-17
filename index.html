@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Buff Systems | Desarrollo Web</title>
+    <style>
+        /* Estilos Generales */
+        :root {
+            --bg-color: #0f172a; /* Azul oscuro/Gris */
+            --text-color: #f8fafc; /* Blanco hueso */
+            --primary-blue: #3b82f6; /* Azul brillante */
+            --card-bg: #1e293b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navegación */
+        header {
+            background-color: rgba(15, 23, 42, 0.9);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #334155;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .logo img {
+            max-height: 40px; /* Tamaño del logo */
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        /* Hero Section (Inicio) */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: var(--primary-blue);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2563eb;
+        }
+
+        /* Secciones de Proyectos y Modelos */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            padding-top: 60px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding-bottom: 60px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            border: 1px solid #334155;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-blue);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            background-color: #334155; /* Fondo temporal hasta que haya imagen */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            color: #cbd5e1;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .card-link {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #0b1120;
+            border-top: 1px solid #334155;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <!-- AQUÍ PEGAREMOS LA RUTA DE TU LOGO DESPUÉS -->
+                    <img src="logo-placeholder.png" alt="Logo" style="display:none;" id="logo-img"> 
+                    Blue Buff Systems
+                </a>
+                <div class="nav-links">
+                    <a href="#nuestro-trabajo">Nuestro Trabajo</a>
+                    <a href="#modelos">Modelos</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <section class="hero container">
+        <h1>Impulsa tu negocio con <span>Blue Buff Systems</span></h1>
+        <p>Diseñamos y desarrollamos páginas web modernas, rápidas y efectivas para llevar tu empresa al siguiente nivel.</p>
+        <a href="#contacto" class="btn">Solicitar Presupuesto</a>
+    </section>
+
+    <!-- TRABAJOS REALIZADOS -->
+    <section id="nuestro-trabajo" class="container">
+        <h2 class="section-title">Páginas que hemos realizado</h2>
+        <div class="grid">
+            <!-- Proyecto 1 -->
+            <div class="card">
+                <div class="card-img">Imagen del Proyecto 1</div>
+                <div class="card-content">
+                    <h3>Cliente Uno</h3>
+                    <p>Landing page optimizada para ventas y captura de clientes.</p>
+                    <a href="#" class="card-link">Ver sitio web &rarr;</a> <!-- Aquí irá el link 1 -->
+                </div>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="card">
+                <div class="card-img">Imagen del Proyecto 2</div>
+                <div class="card-content">
+                    <h3>Cliente Dos</h3>
+                    <p>Sitio corporativo con sistema de reservas integrado.</p>
+                    <a href="#" class="card-link">Ver sitio web &rarr;</a> <!-- Aquí irá el link 2 -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODELOS / PLANTILLAS -->
+    <section id="modelos" class="container">
+        <h2 class="section-title">Modelos y Arquitecturas</h2>
+        <div class="grid">
+            <!-- Modelo 1 -->
+            <div class="card">
+                <div class="card-img">Imagen del Modelo 1</div>
+                <div class="card-content">
+                    <h3>E-commerce Básico</h3>
+                    <p>Tienda online lista para empezar a vender tus productos.</p>
+                    <a href="#" class="card-link">Ver modelo &rarr;</a> <!-- Aquí irá el link del modelo 1 -->
+                </div>
+            </div>
+            <!-- Modelo 2 -->
+            <div class="card">
+                <div class="card-img">Imagen del Modelo 2</div>
+                <div class="card-content">
+                    <h3>Landing Page Institucional</h3>
+                    <p>Modelo perfecto para abogados, contadores o consultoras.</p>
+                    <a href="#" class="card-link">Ver modelo &rarr;</a> <!-- Aquí irá el link del modelo 2 -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <div class="container">
+            <h2>¿Listo para empezar?</h2>
+            <p style="margin-bottom: 20px; color: #cbd5e1;">Contáctanos y hablemos de tu próximo proyecto.</p>
+            <p>Email: contacto@bluebuffsystems.com</p>
+            <p style="margin-top: 20px; font-size: 0.8rem; color: #64748b;">&copy; 2026 Blue Buff Systems. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
