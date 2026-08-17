@@ -7,9 +7,9 @@
     <style>
         /* Estilos Generales */
         :root {
-            --bg-color: #0f172a; /* Azul oscuro/Gris */
-            --text-color: #f8fafc; /* Blanco hueso */
-            --primary-blue: #3b82f6; /* Azul brillante */
+            --bg-color: #0f172a;
+            --text-color: #f8fafc;
+            --primary-blue: #3b82f6;
             --card-bg: #1e293b;
         }
 
@@ -35,7 +35,7 @@
         /* Navegación */
         header {
             background-color: rgba(15, 23, 42, 0.9);
-            padding: 20px 0;
+            padding: 15px 0;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -51,7 +51,7 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             font-size: 1.5rem;
             font-weight: bold;
             color: var(--text-color);
@@ -59,7 +59,8 @@
         }
 
         .logo img {
-            max-height: 40px; /* Tamaño del logo */
+            max-height: 50px; /* Tamaño ajustado para tu logo */
+            border-radius: 50%; /* Hace que el logo se vea redondeado si es cuadrado */
         }
 
         .nav-links a {
@@ -142,11 +143,12 @@
         .card-img {
             width: 100%;
             height: 200px;
-            background-color: #334155; /* Fondo temporal hasta que haya imagen */
+            background-color: #334155;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #94a3b8;
+            font-size: 0.9rem;
         }
 
         .card-content {
@@ -191,8 +193,7 @@
         <div class="container">
             <nav>
                 <a href="#" class="logo">
-                    <!-- AQUÍ PEGAREMOS LA RUTA DE TU LOGO DESPUÉS -->
-                    <img src="logo-placeholder.png" alt="Logo" style="display:none;" id="logo-img"> 
+                    <img src="https://res.cloudinary.com/cgzykzso/image/upload/v1787009348/ChatGPT_Image_17_ago_2026_07_57_26_p.m._rvgjpx.png" alt="Logo Blue Buff Systems"> 
                     Blue Buff Systems
                 </a>
                 <div class="nav-links">
@@ -215,22 +216,22 @@
     <section id="nuestro-trabajo" class="container">
         <h2 class="section-title">Páginas que hemos realizado</h2>
         <div class="grid">
-            <!-- Proyecto 1 -->
+            <!-- Proyecto 1: Coki -->
             <div class="card">
-                <div class="card-img">Imagen del Proyecto 1</div>
+                <div class="card-img">Vista previa no disponible</div>
                 <div class="card-content">
-                    <h3>Cliente Uno</h3>
-                    <p>Landing page optimizada para ventas y captura de clientes.</p>
-                    <a href="#" class="card-link">Ver sitio web &rarr;</a> <!-- Aquí irá el link 1 -->
+                    <h3>Coki</h3>
+                    <p>Es el modelo más básico.</p>
+                    <a href="https://www.cokiofertas.com.ar/" target="_blank" rel="noopener noreferrer" class="card-link">Ver sitio web &rarr;</a>
                 </div>
             </div>
-            <!-- Proyecto 2 -->
+            <!-- Proyecto 2: SGR Import -->
             <div class="card">
-                <div class="card-img">Imagen del Proyecto 2</div>
+                <div class="card-img">Vista previa no disponible</div>
                 <div class="card-content">
-                    <h3>Cliente Dos</h3>
-                    <p>Sitio corporativo con sistema de reservas integrado.</p>
-                    <a href="#" class="card-link">Ver sitio web &rarr;</a> <!-- Aquí irá el link 2 -->
+                    <h3>SGR Import</h3>
+                    <p>Es el modelo más básico.</p>
+                    <a href="https://sgr-import.vercel.app/" target="_blank" rel="noopener noreferrer" class="card-link">Ver sitio web &rarr;</a>
                 </div>
             </div>
         </div>
@@ -246,7 +247,7 @@
                 <div class="card-content">
                     <h3>E-commerce Básico</h3>
                     <p>Tienda online lista para empezar a vender tus productos.</p>
-                    <a href="#" class="card-link">Ver modelo &rarr;</a> <!-- Aquí irá el link del modelo 1 -->
+                    <a href="#" class="card-link">Ver modelo &rarr;</a>
                 </div>
             </div>
             <!-- Modelo 2 -->
@@ -254,8 +255,8 @@
                 <div class="card-img">Imagen del Modelo 2</div>
                 <div class="card-content">
                     <h3>Landing Page Institucional</h3>
-                    <p>Modelo perfecto para abogados, contadores o consultoras.</p>
-                    <a href="#" class="card-link">Ver modelo &rarr;</a> <!-- Aquí irá el link del modelo 2 -->
+                    <p>Modelo perfecto para empresas o consultoras.</p>
+                    <a href="#" class="card-link">Ver modelo &rarr;</a>
                 </div>
             </div>
         </div>
