@@ -7,7 +7,7 @@
     <style>
         /* Variables y Reset */
         :root {
-            --bg-color: #030307;
+            --bg-color: #020307;
             --text-color: #f8fafc;
             --text-muted: #cbd5e1;
             --primary-blue: #3b82f6;
@@ -101,6 +101,12 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(37, 99, 235, 0.5);
             filter: brightness(1.15);
+        }
+
+        /* Compensa el header sticky al saltar a un ancla (#modelos, #arquitecturas, etc.) */
+        section[id],
+        footer[id] {
+            scroll-margin-top: 100px;
         }
 
         /* Hero Section */
