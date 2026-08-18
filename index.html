@@ -7,7 +7,7 @@
     <style>
         /* Variables y Reset */
         :root {
-            --bg-color: #020311;
+            --bg-color: #04040a;
             --text-color: #f8fafc;
             --text-muted: #cbd5e1;
             --primary-blue: #3b82f6;
@@ -161,6 +161,65 @@
             filter: brightness(1.15);
         }
 
+        /* Sección de Contacto Destacada */
+        .contact-highlight {
+            padding-bottom: 45px;
+        }
+
+        .contact-highlight .section-title {
+            padding-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .contact-bar {
+            margin: 0 auto;
+            padding: 22px 40px;
+            max-width: 620px;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 0;
+            flex-wrap: wrap;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.35);
+        }
+
+        .contact-bar a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: transform 0.2s ease, filter 0.2s ease;
+            padding: 0 30px;
+        }
+
+        .contact-bar a:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.15);
+        }
+
+        .contact-bar .divider {
+            width: 1px;
+            background: rgba(255, 255, 255, 0.3);
+            margin: 4px 0;
+        }
+
+        .contact-bar .label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .contact-bar .value {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
         /* Secciones y Grillas */
         .section-title {
             text-align: center;
@@ -309,6 +368,22 @@
             .grid {
                 grid-template-columns: 1fr;
             }
+
+            .contact-bar {
+                flex-direction: column;
+                padding: 25px;
+                gap: 18px;
+            }
+
+            .contact-bar a {
+                padding: 0;
+            }
+
+            .contact-bar .divider {
+                width: 60%;
+                height: 1px;
+                margin: 0 auto;
+            }
         }
     </style>
 </head>
@@ -336,6 +411,22 @@
         <a href="#arquitecturas" class="btn">Solicitar Presupuesto</a>
     </section>
 
+    <!-- SECCIÓN DE CONTACTO DESTACADA -->
+    <section class="contact-highlight container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-bar">
+            <a href="mailto:federicoamil04@gmail.com">
+                <span class="label">Mail</span>
+                <span class="value">federicoamil04@gmail.com</span>
+            </a>
+            <div class="divider"></div>
+            <a href="tel:3512670248">
+                <span class="label">Teléfono</span>
+                <span class="value">351 267 0248</span>
+            </a>
+        </div>
+    </section>
+
     <!-- TRABAJOS REALIZADOS -->
     <section id="nuestro-trabajo" class="container">
         <h2 class="section-title" style="margin-bottom: 35px;">Páginas que hemos realizado</h2>
@@ -351,7 +442,7 @@
             </div>
             <!-- SGR Import -->
             <div class="card">
-                <img src="https://res.cloudinary.com/cgzykzso/image/upload/v1785631971/coki_ofertas/z81atndqndg1zflosaxi.jpg" alt="Vista previa de SGR Import" class="card-img">
+                <img src="https://res.cloudinary.com/cgzykzso/image/upload/v1787017976/ChatGPT_Image_17_ago_2026_10_52_36_p.m._t5ycfx.png" alt="Vista previa de SGR Import" class="card-img">
                 <div class="card-content">
                     <h3>SGR Import</h3>
                     <p>Es el modelo más básico.</p>
