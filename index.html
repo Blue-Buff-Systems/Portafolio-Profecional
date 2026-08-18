@@ -7,7 +7,7 @@
     <style>
         /* Variables y Reset */
         :root {
-            --bg-color: #000000; /* Fondo negro puro para matchear con la imagen */
+            --bg-color: #000000;
             --text-color: #f8fafc;
             --text-muted: #cbd5e1;
             --primary-blue: #3b82f6;
@@ -82,7 +82,7 @@
             color: var(--primary-blue);
         }
 
-        /* Hero Section con Logo Grande Centrado */
+        /* Hero Section */
         .hero {
             text-align: center;
             padding: 60px 20px;
@@ -93,7 +93,7 @@
 
         .hero-logo {
             width: 100%;
-            max-width: 180px; /* Tamaño grande del logo */
+            max-width: 280px;
             height: auto;
             margin-bottom: 25px;
             display: block;
@@ -165,10 +165,11 @@
 
         .card-img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
-            object-position: top;
-            background-color: #1f2937;
+            height: 240px;
+            object-fit: contain;
+            object-position: center;
+            background-color: #0d1117;
+            padding: 10px;
         }
 
         .card-content {
@@ -217,7 +218,7 @@
             margin-bottom: 10px;
         }
 
-        /* Ajustes para Celulares */
+        /* Ajustes Mobile */
         @media (max-width: 640px) {
             nav {
                 flex-direction: column;
@@ -233,7 +234,7 @@
             }
 
             .hero-logo {
-                max-width: 140px; /* Tamaño adaptado para móviles */
+                max-width: 200px;
             }
 
             .btn {
@@ -263,7 +264,7 @@
         </div>
     </header>
 
-    <!-- SECCIÓN PRINCIPAL (LOGO GRANDE EN EL MEDIO) -->
+    <!-- SECCIÓN PRINCIPAL -->
     <section class="hero container">
         <img src="https://res.cloudinary.com/cgzykzso/image/upload/v1787009348/ChatGPT_Image_17_ago_2026_07_57_26_p.m._rvgjpx.png" alt="Logo Blue Buff Systems" class="hero-logo">
         <h1>Impulsa tu negocio con <span>Blue Buff Systems</span></h1>
