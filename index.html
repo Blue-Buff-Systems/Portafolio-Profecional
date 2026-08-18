@@ -127,8 +127,12 @@
             font-weight: 800;
         }
 
+        /* Texto con degradado azul */
         .hero h1 span {
-            color: var(--primary-blue);
+            background: linear-gradient(135deg, #60a5fa 0%, #2563eb 50%, #1d4ed8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .hero p {
@@ -138,20 +142,23 @@
             max-width: 650px;
         }
 
+        /* Botón de Acción Principal en Óvalo con Degradado Azul */
         .btn {
             display: inline-block;
-            background-color: var(--primary-blue);
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
             color: white;
-            padding: 14px 28px;
+            padding: 14px 32px;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 50px;
             font-weight: 600;
-            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
         }
 
         .btn:hover {
-            background-color: var(--primary-hover);
             transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+            filter: brightness(1.15);
         }
 
         /* Secciones y Grillas */
@@ -330,6 +337,22 @@
                     <h3>Modelo 1</h3>
                     <p>Plantilla interactiva para demostración de arquitectura web.</p>
                     <a href="https://blue-buff-systems.github.io/Modelo-1/" target="_blank" rel="noopener noreferrer" class="card-link">Ver modelo &rarr;</a>
+                </div>
+            </div>
+            <!-- E-commerce Básico -->
+            <div class="card">
+                <div class="card-content">
+                    <h3>E-commerce Básico</h3>
+                    <p>Tienda online lista para empezar a vender tus productos.</p>
+                    <a href="#" class="card-link">Ver modelo &rarr;</a>
+                </div>
+            </div>
+            <!-- Landing Page Institucional -->
+            <div class="card">
+                <div class="card-content">
+                    <h3>Landing Page Institucional</h3>
+                    <p>Modelo perfecto para empresas o consultoras.</p>
+                    <a href="#" class="card-link">Ver modelo &rarr;</a>
                 </div>
             </div>
         </div>
