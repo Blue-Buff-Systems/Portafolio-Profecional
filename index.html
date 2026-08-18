@@ -7,7 +7,7 @@
     <style>
         /* Variables y Reset */
         :root {
-            --bg-color: #04040a;
+            --bg-color: #030307;
             --text-color: #f8fafc;
             --text-muted: #cbd5e1;
             --primary-blue: #3b82f6;
@@ -521,6 +521,17 @@
             <p style="margin-top: 20px; font-size: 0.8rem; color: #64748b;">&copy; 2026 Blue Buff Systems. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script>
+      // Evita que el navegador restaure la posición de scroll
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+      // Fuerza el scroll al inicio al cargar
+      window.addEventListener('load', () => {
+        window.scrollTo(0, 0);
+      });
+    </script>
 
 </body>
 </html>
