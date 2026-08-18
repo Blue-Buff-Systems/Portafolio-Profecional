@@ -58,11 +58,24 @@
             align-items: center;
         }
 
+        /* Botón del Nombre de la Marca */
         .logo-text {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             font-weight: 700;
-            color: var(--text-color);
+            color: #ffffff;
             text-decoration: none;
+            padding: 8px 18px;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+        }
+
+        .logo-text:hover {
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.5);
+            filter: brightness(1.15);
         }
 
         /* Botones del Navbar en Óvalo con Degradado Azul */
@@ -311,20 +324,12 @@
     <section id="modelos" class="container">
         <h2 class="section-title">Modelos y Arquitecturas</h2>
         <div class="grid">
+            <!-- Modelo 1 -->
             <div class="card">
-                <div class="card-img" style="display: flex; align-items: center; justify-content: center; color: #94a3b8;">E-commerce</div>
                 <div class="card-content">
-                    <h3>E-commerce Básico</h3>
-                    <p>Tienda online lista para empezar a vender tus productos.</p>
-                    <a href="#" class="card-link">Ver modelo &rarr;</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-img" style="display: flex; align-items: center; justify-content: center; color: #94a3b8;">Landing Page</div>
-                <div class="card-content">
-                    <h3>Landing Page Institucional</h3>
-                    <p>Modelo perfecto para empresas o consultoras.</p>
-                    <a href="#" class="card-link">Ver modelo &rarr;</a>
+                    <h3>Modelo 1</h3>
+                    <p>Plantilla interactiva para demostración de arquitectura web.</p>
+                    <a href="https://blue-buff-systems.github.io/Modelo-1/" target="_blank" rel="noopener noreferrer" class="card-link">Ver modelo &rarr;</a>
                 </div>
             </div>
         </div>
