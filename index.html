@@ -173,7 +173,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
-            padding-bottom: 50px;
+            padding-bottom: 30px;
         }
 
         .card {
@@ -215,8 +215,32 @@
         .card-content p {
             color: var(--text-muted);
             font-size: 0.9rem;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+        }
+
+        /* Estilos para el desglose de precios dentro de las tarjetas */
+        .price-tag {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #60a5fa;
+            margin-bottom: 12px;
+        }
+
+        .price-details {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            border-top: 1px solid var(--border-color);
+            padding-top: 12px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
             flex-grow: 1;
+        }
+
+        .price-details li {
+            margin-bottom: 6px;
+            display: flex;
+            justify-content: space-between;
         }
 
         .card-link {
@@ -288,6 +312,7 @@
                 <div class="nav-links">
                     <a href="#nuestro-trabajo">Nuestro Trabajo</a>
                     <a href="#modelos">Modelos</a>
+                    <a href="#arquitecturas">Arquitecturas</a>
                     <a href="#contacto">Contacto</a>
                 </div>
             </nav>
@@ -299,7 +324,7 @@
         <img src="https://res.cloudinary.com/cgzykzso/image/upload/v1787009348/ChatGPT_Image_17_ago_2026_07_57_26_p.m._rvgjpx.png" alt="Logo Blue Buff Systems" class="hero-logo">
         <h1>Impulsa tu negocio con <span>Blue Buff Systems</span></h1>
         <p>Diseñamos y desarrollamos páginas web modernas, rápidas y efectivas para llevar tu empresa al siguiente nivel.</p>
-        <a href="#contacto" class="btn">Solicitar Presupuesto</a>
+        <a href="#arquitecturas" class="btn">Solicitar Presupuesto</a>
     </section>
 
     <!-- TRABAJOS REALIZADOS -->
@@ -327,9 +352,9 @@
         </div>
     </section>
 
-    <!-- MODELOS / PLANTILLAS -->
+    <!-- MODELOS -->
     <section id="modelos" class="container">
-        <h2 class="section-title">Modelos y Arquitecturas</h2>
+        <h2 class="section-title">Modelos</h2>
         <div class="grid">
             <!-- Modelo 1 -->
             <div class="card">
@@ -339,26 +364,45 @@
                     <a href="https://blue-buff-systems.github.io/Modelo-1/" target="_blank" rel="noopener noreferrer" class="card-link">Ver modelo &rarr;</a>
                 </div>
             </div>
-            <!-- E-commerce Básico -->
-            <div class="card">
-                <div class="card-content">
-                    <h3>E-commerce Básico</h3>
-                    <p>Tienda online lista para empezar a vender tus productos.</p>
-                    <a href="#" class="card-link">Ver modelo &rarr;</a>
-                </div>
-            </div>
+        </div>
+    </section>
+
+    <!-- ARQUITECTURAS -->
+    <section id="arquitecturas" class="container">
+        <h2 class="section-title">Arquitecturas</h2>
+        <div class="grid">
             <!-- Landing Page Institucional -->
             <div class="card">
                 <div class="card-content">
                     <h3>Landing Page Institucional</h3>
-                    <p>Modelo perfecto para empresas o consultoras.</p>
-                    <a href="#" class="card-link">Ver modelo &rarr;</a>
+                    <p>Modelo perfecto para empresas o consultoras que buscan presencia digital sólida.</p>
+                    <div class="price-tag">USD $100 - $700</div>
+                    <ul class="price-details">
+                        <li><span>Dominio:</span> <strong>USD $12 / año</strong></li>
+                        <li><span>Hosting / Servidor:</span> <strong>USD $20 / año</strong></li>
+                        <li><span>Mantenimiento:</span> <strong>5% mensual</strong></li>
+                    </ul>
+                    <a href="#contacto" class="card-link">Solicitar presupuesto &rarr;</a>
+                </div>
+            </div>
+            <!-- E-commerce Básico -->
+            <div class="card">
+                <div class="card-content">
+                    <h3>E-commerce</h3>
+                    <p>Tienda online completa con catálogo y carrito lista para empezar a vender tus productos.</p>
+                    <div class="price-tag">USD $350 - $1.800+</div>
+                    <ul class="price-details">
+                        <li><span>Dominio:</span> <strong>USD $12 / año</strong></li>
+                        <li><span>Hosting / Servidor:</span> <strong>USD $50 / año</strong></li>
+                        <li><span>Mantenimiento:</span> <strong>10% mensual</strong></li>
+                    </ul>
+                    <a href="#contacto" class="card-link">Solicitar presupuesto &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- FOOTER / CONTACTO -->
     <footer id="contacto">
         <div class="container">
             <h2>¿Listo para empezar?</h2>
